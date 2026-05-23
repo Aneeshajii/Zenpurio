@@ -1,0 +1,25 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tsConfigPaths from "vite-tsconfig-paths";
+import tailwindcss from "@tailwindcss/vite";
+import { tanstackStart } from "@tanstack/react-start/plugin/vite";
+
+export default defineConfig({
+  plugins: [
+    tanstackStart({
+      server: { entry: "server" },
+    }),
+    react(),
+    tailwindcss(),
+    tsConfigPaths({ projects: ["./tsconfig.json"] }),
+  ],
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
+  },
+  server: {
+    host: "::",
+    port: 8080,
+  },
+});
