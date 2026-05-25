@@ -14,12 +14,12 @@ export const serviceCategories = [
     image: "/images/service_housemaid_1779134456643.png",
     description: "Meeting the rising demand for reliable domestic help, Pureo provides premium quality housemaid services. Our dedicated staff handle kitchen cleaning, dish washing, cloth washing, and daily chores with expert care.",
     features: [
-      { title: "Disinfect & Sanitize", icon: Shield },
-      { title: "Kitchen & Bathroom Cleaning", icon: Droplets },
-      { title: "Living Areas / Rooms", icon: Home },
-      { title: "Dusting & Floor Cleaning", icon: Sparkles },
-      { title: "Cook & Caretaker Services", icon: Utensils },
-      { title: "Flexible Scheduling", icon: Users }
+      { title: "Disinfect & Sanitize", icon: Shield, image: "/images/Disinfect & Sanitize.jpg" },
+      { title: "Kitchen & Bathroom Cleaning", icon: Droplets, image: "/images/Kitchen & Bathroom Cleaning.jpg" },
+      { title: "Living Areas / Rooms", icon: Home, image: "/images/Living Areas.jpg" },
+      { title: "Dusting & Floor Cleaning", icon: Sparkles, image: "/images/Dusting & Floor Cleaning.jpg" },
+      { title: "Cook & Caretaker Services", icon: Utensils, image: "/images/Cook & Caretaker Services.jpg" },
+      { title: "Flexible Scheduling", icon: Users, image: "/images/Flexible Scheduling.jpg" }
     ]
   },
   {
@@ -45,18 +45,18 @@ export const serviceCategories = [
     image: "/images/service_commercial_cleaning_1779133619028.png",
     description: "Maintain a pristine corporate image with our enterprise-grade cleaning protocols designed specifically for high-traffic environments.",
     features: [
-      { title: "Corporate Offices", icon: Briefcase },
-      { title: "Shopping Malls", icon: Archive },
-      { title: "Hotels", icon: Hotel },
-      { title: "Airports", icon: Plane },
-      { title: "Educational Institutions", icon: GraduationCap },
-      { title: "Hostels & Restaurants", icon: Coffee },
-      { title: "Hospitals", icon: Stethoscope },
-      { title: "Commercial Establishments", icon: Building2 },
-      { title: "Guest House", icon: Home },
-      { title: "Banks & ATMs", icon: ShieldCheck },
-      { title: "Sports & Recreations Clubs", icon: Users },
-      { title: "Warehouses", icon: Package }
+      { title: "Corporate Offices", icon: Briefcase, image: "/images/corporate.jpg" },
+      { title: "Shopping Malls", icon: Archive, image: "/images/shopping.jpg" },
+      { title: "Hotels", icon: Hotel, image: "/images/hotel.jpg" },
+      { title: "Airports", icon: Plane, image: "/images/airport.jpg" },
+      { title: "Educational Institutions", icon: GraduationCap, image: "/images/Educational Institutions.jpg" },
+      { title: "Hostels & Restaurants", icon: Coffee, image: "/images/resturant.jpg" },
+      { title: "Hospitals", icon: Stethoscope, image: "/images/hospital.jpg" },
+      { title: "Commercial Establishments", icon: Building2, image: "/images/Commercial Establishments.jpg" },
+      { title: "Guest House", icon: Home, image: "/images/Guest House.jpg" },
+      { title: "Banks & ATMs", icon: ShieldCheck, image: "/images/Banks & ATMs.jpg" },
+      { title: "Sports & Recreations Clubs", icon: Users, image: "/images/Sports & Recreations Clubs.jpg" },
+      { title: "Warehouses", icon: Package, image: "/images/Warehouses.jpg" }
     ]
   },
   {
@@ -66,18 +66,18 @@ export const serviceCategories = [
     image: "/images/hero_industrial_1779124128556.png",
     description: "Heavy-duty cleaning engineered for safety, compliance, and rigorous industrial standards.",
     features: [
-      { title: "New Building Cleaning", icon: Sparkles },
-      { title: "Portion-wise Cleaning", icon: Grid },
-      { title: "Construction Debris Removal", icon: Trash2 },
-      { title: "Property Cleaning", icon: Home },
-      { title: "Building Premises and Parking", icon: Truck },
-      { title: "Windows Cleaning", icon: GlassWater },
-      { title: "Marble and Tiles Cleaning", icon: Layers },
-      { title: "Floor Cleaning", icon: Brush },
-      { title: "Washing of Walls", icon: Droplets },
-      { title: "Unwanted Sticker & Label removing", icon: Trash2 },
-      { title: "Vacuum Cleaning", icon: Fan },
-      { title: "Sweeping, Mopping & Polishing", icon: Sparkles }
+      { title: "New Building Cleaning", icon: Sparkles, image: "/images/New Building Cleaning.jpg" },
+      { title: "Portion-wise Cleaning", icon: Grid, image: "/images/Portion-wise Cleaning.jpg" },
+      { title: "Construction Debris Removal", icon: Trash2, image: "/images/Construction Debris Removal.jpg" },
+      { title: "Property Cleaning", icon: Home, image: "/images/Property Cleaning.jpg" },
+      { title: "Building Premises and Parking", icon: Truck, image: "/images/Building Premises and Parking.jpg" },
+      { title: "Windows Cleaning", icon: GlassWater, image: "/images/Windows Cleaning.jpg" },
+      { title: "Marble and Tiles Cleaning", icon: Layers, image: "/images/Marble and Tiles Cleaning.jpg" },
+      { title: "Floor Cleaning", icon: Brush, image: "/images/Floor Cleaning.jpg" },
+      { title: "Washing of Walls", icon: Droplets, image: "/images/Washing of Walls.jpg" },
+      { title: "Unwanted Sticker & Label removing", icon: Trash2, image: "/images/Unwanted Sticker & Label removing.jpg" },
+      { title: "Vacuum Cleaning", icon: Fan, image: "/images/Vacuum Cleaning.jpg" },
+      { title: "Sweeping, Mopping & Polishing", icon: Sparkles, image: "/images/polishing.jpg" }
     ]
   },
   {
@@ -87,17 +87,17 @@ export const serviceCategories = [
     image: "/images/hero_commercial_1779124110819.png",
     description: "Specialized deep cleaning and turnaround services for massive industrial setups, factories, and construction sites.",
     features: [
-      { title: "Storage Tank Cleaning", icon: Archive },
-      { title: "Turnaround Services", icon: Settings },
-      { title: "Oil sump & Grit Cleaning", icon: Droplets },
-      { title: "Non-Toxic waste Removal", icon: Trash2 },
-      { title: "Sludge Removal & Cleaning", icon: Brush },
-      { title: "Factory Floor Cleaning", icon: Factory },
-      { title: "Vacuum Services", icon: Fan },
-      { title: "Industrial Equipments Cleaning", icon: Wrench },
-      { title: "Ventilation Cleaning", icon: Wind },
-      { title: "Doors, Windows & Skids", icon: GlassWater },
-      { title: "De-greasing & Carbonizing", icon: Zap }
+      { title: "Storage Tank Cleaning", icon: Archive, image: "/images/Storage Tank Cleaning.jpg" },
+      { title: "Turnaround Services", icon: Settings, image: "/images/Turnaround Services.jpg" },
+      { title: "Oil sump & Grit Cleaning", icon: Droplets, image: "/images/Oil sump & Grit Cleaning.jpg" },
+      { title: "Non-Toxic waste Removal", icon: Trash2, image: "/images/Non-Toxic waste Removal.jpg" },
+      { title: "Sludge Removal & Cleaning", icon: Brush, image: "/images/Sludge Removal & Cleaning.jpg" },
+      { title: "Factory Floor Cleaning", icon: Factory, image: "/images/Factory Floor Cleaning.jpg" },
+      { title: "Vacuum Services", icon: Fan, image: "/images/vaccum.jpg" },
+      { title: "Industrial Equipments Cleaning", icon: Wrench, image: "/images/indyustrial wquipmen.jpg" },
+      { title: "Ventilation Cleaning", icon: Wind, image: "/images/Ventilation Cleaning.jpg" },
+      { title: "Doors, Windows & Skids", icon: GlassWater, image: "/images/Doors, Windows & Skids.jpg" },
+      { title: "De-greasing & Carbonizing", icon: Zap, image: "/images/De-greasing & Carbonizing.jpg" }
     ]
   }
 ];

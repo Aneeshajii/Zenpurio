@@ -5,13 +5,13 @@ import { Footer } from "./Footer";
 
 export function PageShell({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-background overflow-x-hidden w-full relative">
       <Header />
       <motion.main
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="flex-1 pt-24"
+        className="flex-1 pt-16 md:pt-20"
       >
         {children}
       </motion.main>

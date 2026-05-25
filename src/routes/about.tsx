@@ -71,7 +71,7 @@ function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground mb-6 leading-tight">
                 Why Choose Pureo Flow Solutions?
               </h2>
-              <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+              <div className="space-y-4 text-lg text-muted-foreground leading-relaxed text-justify">
                 <p>
                   Pureo is a premier service company that offers dependable, high-tier cleaning services at an affordable rate. We have a dedicated regiment of <strong>'purologists'</strong> at our disposal who are hardworking, fully equipped, and meticulously managed.
                 </p>
@@ -109,7 +109,7 @@ function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground mb-6 leading-tight">
                 Uncompromising Quality Assurance
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8 text-justify">
                 We don't just clean; we verify. Every major project is subjected to a strict <strong>supervisor-level quality check within 48 hours</strong> of completion to ensure our impeccable standards are met.
               </p>
               <ul className="space-y-4">

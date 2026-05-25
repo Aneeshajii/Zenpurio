@@ -48,18 +48,14 @@ export function Header() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-border/50 ${
-        scrolled ? "py-3 shadow-soft" : "py-4"
+        scrolled ? "py-2 shadow-soft" : "py-3"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-4 group">
-            <div className="size-16 md:size-24 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-white/80 overflow-hidden shrink-0 group-hover:scale-105 transition-transform duration-300">
-              <img src={logo} alt="Pureo Flow Solutions cleaning services logo" className="h-full w-full object-contain p-1" fetchPriority="high" decoding="async" />
-            </div>
-            <div className="hidden sm:flex flex-col leading-none">
-              <span className="font-display text-3xl font-extrabold tracking-tight text-foreground drop-shadow-sm">PUREO</span>
-              <span className="text-xs md:text-sm text-primary tracking-widest uppercase font-black mt-1">Zenpurio</span>
+          <Link to="/" className="flex items-center group">
+            <div className="h-14 sm:h-16 md:h-20 bg-transparent flex items-center justify-start shrink-0 transition-transform duration-300">
+              <img src="/images/pureo-logo-cropped.jpg" alt="Pureo Flow Solutions cleaning services logo" className="h-full w-auto object-contain rounded-md scale-[1.15] sm:scale-[1.25] md:scale-[1.35] origin-left mix-blend-multiply contrast-[1.2] brightness-110" fetchPriority="high" decoding="async" />
             </div>
           </Link>
 

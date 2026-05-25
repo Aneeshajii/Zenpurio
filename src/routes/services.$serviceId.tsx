@@ -9,9 +9,29 @@ export const Route = createFileRoute("/services/$serviceId")({
     const service = serviceCategories.find(s => s.id === params.serviceId);
     return {
       meta: [
-        { title: `${service ? service.title : 'Service'} | Pureo Flow Solutions` },
-        { name: "description", content: service ? service.description : "Premium cleaning services" }
-      ]
+        { title: `${service ? service.title : 'Service'} in Trivandrum & Kerala | Pureo Flow Solutions` },
+        { name: "description", content: `${service ? service.description : "Premium cleaning services"} Available across Trivandrum, Kochi, Kozhikode, and Kollam.` },
+        { name: "keywords", content: `${service ? service.title.toLowerCase() : 'cleaning'}, cleaning service near me, best ${service ? service.title.toLowerCase() : 'service'} in Trivandrum, Kerala` }
+      ],
+      scripts: service ? [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": service.title,
+            "description": service.description,
+            "provider": { "@type": "LocalBusiness", "name": "Pureo Flow Solutions" },
+            "areaServed": [
+              { "@type": "City", "name": "Thiruvananthapuram" },
+              { "@type": "City", "name": "Kochi" },
+              { "@type": "City", "name": "Kozhikode" },
+              { "@type": "City", "name": "Kollam" }
+            ],
+            "url": `https://pureo.in/services/${service.id}`
+          })
+        }
+      ] : []
     };
   },
   component: ServiceDetailPage,
@@ -92,7 +112,7 @@ function ServiceDetailPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mb-20 max-w-4xl mx-auto"
           >
-            <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed font-medium">
+            <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed font-medium text-justify">
               {service.description}
             </p>
           </motion.div>
@@ -104,7 +124,7 @@ function ServiceDetailPage() {
             className="w-full"
           >
             <h3 className="font-display text-2xl md:text-3xl font-extrabold mb-8 text-center md:text-left">What's Included:</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 w-full">
               {service.features.map((feature, idx) => (
                 <motion.div 
                   key={idx}
@@ -123,7 +143,7 @@ function ServiceDetailPage() {
                     <span className="text-sm md:text-base font-bold text-foreground leading-tight px-1 line-clamp-2">{feature.title}</span>
                     {/* @ts-ignore */}
                     {feature.description && (
-                      <p className="text-xs md:text-sm text-muted-foreground mt-2 line-clamp-3 leading-snug hidden sm:block">{feature.description}</p>
+                      <p className="text-xs md:text-sm text-muted-foreground mt-2 md:mt-3 line-clamp-4 leading-relaxed text-justify block">{feature.description}</p>
                     )}
                   </div>
                 </motion.div>
@@ -131,10 +151,10 @@ function ServiceDetailPage() {
             </div>
           </motion.div>
           
-          <div className="mt-20 text-center">
+          <div className="mt-20 text-center flex justify-center">
             <Link
               to="/contact"
-              className="inline-flex w-full sm:w-auto rounded-full bg-primary px-10 py-4 md:py-5 text-base md:text-lg font-bold text-white shadow-lg hover:bg-primary/90 transition-all hover:scale-105 active:scale-95 text-center"
+              className="inline-flex items-center justify-center w-auto rounded-full bg-primary px-8 py-3 md:px-10 md:py-5 text-sm md:text-lg font-bold text-white shadow-lg hover:bg-primary/90 transition-all hover:scale-105 active:scale-95"
             >
               Request a Quote
             </Link>

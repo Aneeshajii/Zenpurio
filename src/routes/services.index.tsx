@@ -1,15 +1,50 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { PageShell, Section } from "@/components/site/PageShell";
-import { CheckCircle2, Home, Building2, Factory, Wrench, ShieldCheck, ArrowRight, HeartHandshake, HardHat } from "lucide-react";
-import { serviceCategories } from "@/data/services";
+import { CheckCircle2, Home, Building2, Factory, Wrench, ShieldCheck, ArrowRight, HeartHandshake, HardHat, Settings2 } from "lucide-react";
+import { serviceCategories, multiModelServices } from "@/data/services";
 
 export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: [
-      { title: "Premium Cleaning Services | Pureo Flow Solutions Kerala" },
-      { name: "description", content: "Explore our premium cleaning and facility management services. Specializing in Residential, Commercial, Industrial, and Multi-Model housekeeping." },
-      { name: "keywords", content: "residential cleaning Trivandrum, office cleaning Kerala, industrial cleaning, maid services Thiruvananthapuram, facility management, plumbing, pest control, painting" }
+      { title: "Cleaning, Plumbing & Maid Services in Trivandrum | Pureo" },
+      { name: "description", content: "Explore our premium cleaning, housemaid, plumbing, electrical, and facility management services. Specializing in Residential, Commercial, and Industrial maintenance in Kerala." },
+      { name: "keywords", content: "cleaning services Trivandrum, office cleaning Kerala, industrial cleaning, maid services Thiruvananthapuram, plumbing services Trivandrum, carpentry Kerala, electrical works" }
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify([
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Housemaid Services (Wonder Maids)",
+            "provider": { "@type": "LocalBusiness", "name": "Pureo Flow Solutions" },
+            "areaServed": [ { "@type": "City", "name": "Thiruvananthapuram" }, { "@type": "City", "name": "Kochi" }, { "@type": "City", "name": "Kozhikode" }, { "@type": "City", "name": "Kollam" } ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Plumbing Works",
+            "provider": { "@type": "LocalBusiness", "name": "Pureo Flow Solutions" },
+            "areaServed": [ { "@type": "City", "name": "Thiruvananthapuram" }, { "@type": "City", "name": "Kochi" }, { "@type": "City", "name": "Kozhikode" }, { "@type": "City", "name": "Kollam" } ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Carpentry Works",
+            "provider": { "@type": "LocalBusiness", "name": "Pureo Flow Solutions" },
+            "areaServed": [ { "@type": "City", "name": "Thiruvananthapuram" }, { "@type": "City", "name": "Kochi" }, { "@type": "City", "name": "Kozhikode" }, { "@type": "City", "name": "Kollam" } ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Electrical Works",
+            "provider": { "@type": "LocalBusiness", "name": "Pureo Flow Solutions" },
+            "areaServed": [ { "@type": "City", "name": "Thiruvananthapuram" }, { "@type": "City", "name": "Kochi" }, { "@type": "City", "name": "Kozhikode" }, { "@type": "City", "name": "Kollam" } ]
+          }
+        ])
+      }
     ]
   }),
   component: ServicesPage,
@@ -61,7 +96,7 @@ function ServicesPage() {
                     </div>
                     <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">{category.title}</h2>
                   </div>
-                  <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+                  <p className="text-muted-foreground text-lg mb-8 leading-relaxed text-justify">
                     {category.description}
                   </p>
                   
@@ -81,9 +116,11 @@ function ServicesPage() {
                     ))}
                   </ul>
 
-                  <Link to={`/services/${category.id}`} className="inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 text-sm font-bold text-white shadow-lg shadow-primary/20 hover:bg-primary/90 hover:-translate-y-1 transition-all">
-                    View Details <ArrowRight className="size-5" />
-                  </Link>
+                  <div className="flex justify-center lg:justify-start w-full">
+                    <Link to={`/services/${category.id}`} className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-sm font-bold text-white shadow-lg shadow-primary/20 hover:bg-primary/90 hover:-translate-y-1 transition-all">
+                      View Details <ArrowRight className="size-5" />
+                    </Link>
+                  </div>
                 </motion.div>
 
                 <motion.div 
@@ -103,6 +140,62 @@ function ServicesPage() {
               </div>
             );
           })}
+        </div>
+      </Section>
+
+      {/* MULTI-MODEL SERVICES SECTION */}
+      <Section className="bg-secondary/20">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <div className="inline-flex items-center justify-center p-3 bg-white rounded-2xl shadow-sm border border-border mb-6 text-primary">
+              <Settings2 className="size-8" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-extrabold font-display tracking-tight text-foreground mb-6">
+              Multi-Model Services
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-justify md:text-center">
+              In addition to our core cleaning services, we offer specialized facility management and maintenance solutions to keep your property in perfect condition.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {multiModelServices.map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white rounded-[2rem] overflow-hidden border border-border shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col h-full"
+              >
+                <div className="h-56 relative overflow-hidden shrink-0">
+                  <img 
+                    src={service.img} 
+                    alt={service.t} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+                  <div className="absolute bottom-4 left-6 right-6">
+                    <h3 className="text-2xl font-bold text-white drop-shadow-md">{service.t}</h3>
+                  </div>
+                </div>
+                <div className="p-6 md:p-8 flex-1 flex flex-col">
+                  <p className="text-muted-foreground leading-relaxed text-sm md:text-base flex-1 text-justify">
+                    {service.d}
+                  </p>
+                  <Link to="/contact" className="mt-6 inline-flex items-center text-primary font-bold hover:text-primary/80 transition-colors group/link w-fit">
+                    Request Service <ArrowRight className="size-4 ml-2 group-hover/link:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </Section>
 

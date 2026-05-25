@@ -69,9 +69,6 @@ function ContactPage() {
                   <MessageSquare className="size-32" />
                 </div>
                 <div className="mb-8">
-                  <div className="inline-flex items-center gap-2 bg-secondary text-primary rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest mb-4">
-                    Send a message
-                  </div>
                   <h2 className="text-3xl font-extrabold font-display text-foreground">Get a Free Quote</h2>
                   <p className="text-muted-foreground mt-2">Fill out the form below and our team will get back to you within 24 hours.</p>
                 </div>

@@ -5,13 +5,13 @@ import logo from "@/assets/pureo-logo.jpeg";
 export function Footer() {
   return (
     <footer className="relative border-t border-border bg-white">
-      <div className="container mx-auto px-4 py-16 grid gap-12 md:grid-cols-4">
-        <div className="md:col-span-1">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="size-12 rounded-md overflow-hidden bg-white border border-border">
-              <img src={logo} alt="Pureo Flow Solutions cleaning services logo" className="size-full object-cover" loading="lazy" />
+      <div className="container mx-auto px-4 py-16 grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <div className="flex items-center gap-2 mb-6">
+            <div className="w-auto h-16 md:h-20 bg-transparent flex items-center justify-start shrink-0">
+              <img src="/images/pureo-logo-cropped.jpg" alt="Pureo Flow Solutions cleaning services logo" className="h-full w-auto object-contain mix-blend-multiply contrast-[1.2] brightness-110 origin-left" loading="lazy" />
             </div>
-            <div>
+            <div className="hidden lg:block">
               <p className="font-display font-bold text-xl text-foreground">PUREO</p>
               <p className="text-[10px] text-muted-foreground tracking-widest uppercase">Zenpurio Housekeeping</p>
             </div>
