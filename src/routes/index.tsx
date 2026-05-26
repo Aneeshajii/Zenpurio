@@ -224,11 +224,12 @@ function OurPartners() {
 }
 
 const services = [
+  { icon: Users, title: "Manpower Services", to: "/services/manpower", desc: "Professional manpower solutions with a dedicated team of 350+ trained professionals.", img: "/images/service_manpower.jpg", highlight: true },
   { icon: HomeIcon, title: "Residential Cleaning", to: "/services/residential", desc: "Comprehensive house cleaning, Carpet & Sofa washing, Bathroom sanitation, and dedicated Servant Maid Services.", img: "/images/home_residential_new.jpg" },
   { icon: Building2, title: "Commercial Cleaning", to: "/services/commercial", desc: "Corporate offices, Shopping Malls, Hotels, Hospitals, Banks, and educational institutions maintained flawlessly.", img: "/images/home_commercial_new.png" },
   { icon: Factory, title: "Industrial Cleaning", to: "/services/industrial", desc: "Heavy-duty factory floor cleaning, Storage tank maintenance, Turnaround services, and Non-Toxic waste removal.", img: "/images/home_industrial.png" },
   { icon: HardHat, title: "Construction & Maintenance", to: "/services/construction", desc: "Specialized deep cleaning and turnaround services for massive industrial setups, factories, and construction sites.", img: "/images/home_construction.png" },
-  { icon: Settings2, title: "Multi-Model Services", to: "/services", desc: "Comprehensive facility management including carpentry, plumbing, pest control, electrical works, painting, and A/C maintenance.", img: "/images/multi_electrical.png", highlight: true },
+  { icon: Settings2, title: "Multi-Model Services", to: "/services", desc: "Comprehensive facility management including carpentry, plumbing, pest control, electrical works, painting, and A/C maintenance.", img: "/images/multi_electrical.png" },
 ];
 
 function ServicesOverview() {
@@ -393,6 +394,7 @@ function ContactSection() {
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-foreground">Service Required</label>
                   <select name="service_required" className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow appearance-none">
+                    <option value="Manpower Services">Manpower Services</option>
                     <option value="Residential Cleaning">Residential Cleaning</option>
                     <option value="Commercial Cleaning">Commercial Cleaning</option>
                     <option value="Industrial Cleaning">Industrial Cleaning</option>
@@ -459,6 +461,78 @@ function ContactSection() {
       </div>
     </Section>
   );
+}
+
+function ManpowerVIP() {
+  return (
+    <Section className="bg-gradient-to-bl from-blue-900 via-slate-900 to-black py-20 md:py-32 relative overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-10 mix-blend-overlay" style={{ backgroundImage: "url('/images/service_manpower.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} />
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }} 
+            whileInView={{ opacity: 1, x: 0 }} 
+            viewport={{ once: true }}
+            className="text-center lg:text-left flex flex-col items-center lg:items-start"
+          >
+            <div className="inline-flex items-center gap-2 bg-blue-500/20 text-blue-300 rounded-full px-4 py-1.5 text-xs md:text-sm font-bold uppercase tracking-widest mb-6 border border-blue-500/30">
+              <span className="relative flex size-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full size-2.5 bg-blue-500"></span>
+              </span>
+              Our Primary Service
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold font-display tracking-tight text-white mb-6 leading-[1.1]">
+              Professional <br className="hidden md:block" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">
+                Manpower Solutions
+              </span>
+            </h2>
+            <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-8 max-w-2xl text-justify">
+              At Pureo Zenpurio Services Private Limited, we believe that a strong workforce is the foundation of every successful organization. We provide businesses with skilled, disciplined, and dependable professionals to support daily operations.
+            </p>
+            
+            <div className="flex flex-col w-full sm:w-auto sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <Link to="/services/manpower" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-8 py-4 text-base font-bold text-white shadow-xl shadow-blue-900/50 hover:bg-blue-500 hover:-translate-y-1 transition-all">
+                Learn More
+              </Link>
+              <a href="tel:8330066663" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 text-base font-bold shadow-sm hover:bg-white/20 hover:-translate-y-1 transition-all">
+                <Phone className="size-5 text-blue-300" /> Contact Us
+              </a>
+            </div>
+            
+            <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-4 text-left mx-auto lg:mx-0 w-full max-w-sm">
+              {[
+                "350+ Trained Professionals", "Operational Excellence", "Disciplined Workforce", "Trusted Partnerships"
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-2 justify-center lg:justify-start">
+                   <CheckCircle2 className="size-5 text-blue-400 shrink-0" />
+                   <span className="font-bold text-sm text-slate-200">{item}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+          
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }} 
+            whileInView={{ opacity: 1, scale: 1 }} 
+            viewport={{ once: true }}
+            className="relative px-4 md:px-0"
+          >
+             <div className="aspect-[4/3] lg:aspect-square rounded-[2rem] overflow-hidden shadow-2xl border-4 border-slate-800 relative z-10 bg-slate-900">
+               <img src="/images/service_manpower.jpg" alt="Professional Manpower Services with 350+ people" className="w-full h-full object-cover" loading="lazy" />
+             </div>
+             <div className="absolute -bottom-4 left-0 md:-left-8 z-20 bg-gradient-to-br from-blue-500 to-blue-700 text-white p-5 md:p-6 rounded-3xl shadow-2xl rotate-[-5deg] border-4 border-slate-800 flex flex-col items-center md:items-start transform hover:rotate-0 transition-transform">
+                <p className="text-[10px] md:text-xs font-bold uppercase tracking-widest mb-1 opacity-90 text-center md:text-left">Our Strength</p>
+                <p className="text-xl md:text-3xl font-extrabold leading-tight text-center md:text-left">350+</p>
+                <p className="text-xl md:text-3xl font-extrabold mb-2 leading-tight text-center md:text-left">People</p>
+                <p className="text-sm font-bold bg-white text-blue-900 inline-block px-3 py-1 rounded-lg">Trained & Reliable</p>
+             </div>
+          </motion.div>
+        </div>
+      </div>
+    </Section>
+  )
 }
 
 function WonderMaidsVIP() {
@@ -604,6 +678,7 @@ function Home() {
       <Hero />
       <TrustBanner />
       <OurPartners />
+      <ManpowerVIP />
       <WonderMaidsVIP />
       <ServicesOverview />
       <AboutSection />

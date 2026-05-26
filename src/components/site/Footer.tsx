@@ -35,6 +35,7 @@ export function Footer() {
         <div>
           <h4 className="font-semibold mb-6 text-sm uppercase tracking-wider text-foreground">Core Services</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
+            <li><Link to="/services/manpower" className="hover:text-primary transition-colors font-semibold text-primary">Manpower Services</Link></li>
             <li><Link to="/services/residential" className="hover:text-primary transition-colors">Residential Cleaning</Link></li>
             <li><Link to="/services/commercial" className="hover:text-primary transition-colors">Commercial Cleaning</Link></li>
             <li><Link to="/services/industrial" className="hover:text-primary transition-colors">Industrial Cleaning</Link></li>
