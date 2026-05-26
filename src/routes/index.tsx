@@ -106,9 +106,9 @@ function Hero() {
         <div className="max-w-3xl">
           <motion.span
             initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-            className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md border border-border/50 text-foreground rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider shadow-sm"
+            className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md border border-border/50 text-foreground rounded-full px-3 py-1.5 text-[9px] sm:text-xs font-bold uppercase tracking-wider shadow-sm whitespace-nowrap"
           >
-            <span className="size-2 rounded-full bg-primary animate-pulse" />
+            <span className="size-1.5 sm:size-2 rounded-full bg-primary animate-pulse shrink-0" />
             A division of Zenpurio Housekeeping Services
           </motion.span>
           <motion.h1
