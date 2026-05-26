@@ -519,8 +519,8 @@ function ManpowerVIP() {
             viewport={{ once: true }}
             className="relative px-4 md:px-0"
           >
-             <div className="aspect-[4/3] lg:aspect-square rounded-[2rem] overflow-hidden shadow-2xl border-4 border-slate-800 relative z-10 bg-slate-900">
-               <img src="/images/service_manpower.jpg" alt="Professional Manpower Services with 350+ people" className="w-full h-full object-cover" loading="lazy" />
+             <div className="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-slate-800 relative z-10 bg-slate-900 w-full flex items-center justify-center">
+               <img src="/images/service_manpower.jpg" alt="Professional Manpower Services with 350+ people" className="w-full h-auto object-contain" loading="lazy" />
              </div>
              <div className="absolute -bottom-4 left-0 md:-left-8 z-20 bg-gradient-to-br from-blue-500 to-blue-700 text-white p-5 md:p-6 rounded-3xl shadow-2xl rotate-[-5deg] border-4 border-slate-800 flex flex-col items-center md:items-start transform hover:rotate-0 transition-transform">
                 <p className="text-[10px] md:text-xs font-bold uppercase tracking-widest mb-1 opacity-90 text-center md:text-left">Our Strength</p>
