@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { PageShell, Section } from "@/components/site/PageShell";
 import { MapPin, Phone, Mail, Clock, Send, MessageSquare } from "lucide-react";
@@ -14,6 +15,60 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+    
+    const formElement = e.target as HTMLFormElement;
+
+    try {
+      const formData = new FormData(formElement);
+      const object = Object.fromEntries(formData);
+      object.access_key = "f8297350-0a8e-4c6b-94ac-4a40e43e92f0";
+      const json = JSON.stringify(object);
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      });
+      
+      const data = await response.json();
+      
+      if (data.success) {
+        setSubmitStatus("success");
+        formElement.reset();
+      } else {
+        throw new Error(data.message || "API Error");
+      }
+    } catch (err) {
+      // Cloudflare or Network Error occurred! Fallback to Native HTML submission
+      console.warn("Background fetch failed (likely Cloudflare block). Falling back to native submission.");
+      
+      // Inject access key directly into the form DOM if not present
+      if (!formElement.querySelector('input[name="access_key"]')) {
+        const keyInput = document.createElement("input");
+        keyInput.type = "hidden";
+        keyInput.name = "access_key";
+        keyInput.value = "f8297350-0a8e-4c6b-94ac-4a40e43e92f0";
+        formElement.appendChild(keyInput);
+      }
+
+      formElement.action = "https://api.web3forms.com/submit";
+      formElement.method = "POST";
+      formElement.submit(); // Force native browser submission
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <PageShell>
       {/* Premium Hero Header */}
@@ -73,20 +128,20 @@ function ContactPage() {
                   <p className="text-muted-foreground mt-2">Fill out the form below and our team will get back to you within 24 hours.</p>
                 </div>
                 
-                <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+                <form id="contact-page-form" className="space-y-5" onSubmit={handleSubmit}>
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div className="space-y-2">
                       <label className="text-sm font-bold text-foreground">First Name</label>
-                      <input type="text" className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow" placeholder="John" />
+                      <input type="text" name="first_name" required className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow" placeholder="John" />
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-bold text-foreground">Last Name</label>
-                      <input type="text" className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow" placeholder="Doe" />
+                      <input type="text" name="last_name" required className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow" placeholder="Doe" />
                     </div>
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-foreground">Email Address</label>
-                    <input type="email" className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow" placeholder="john@example.com" />
+                    <input type="email" name="email" required className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow" placeholder="john@example.com" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-foreground">Service Required</label>
@@ -101,10 +156,22 @@ function ContactPage() {
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-foreground">Message</label>
-                    <textarea rows={4} className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow resize-none" placeholder="Tell us about your cleaning needs..."></textarea>
+                    <textarea name="message" required rows={4} className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow resize-none" placeholder="Tell us about your cleaning needs..."></textarea>
                   </div>
-                  <button type="button" className="w-full flex items-center justify-center gap-2 bg-primary text-white rounded-xl px-6 py-4 font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 hover:-translate-y-0.5 transition-all">
-                    Send Message <Send className="size-4" />
+                  
+                  {submitStatus === "success" && (
+                    <div className="p-4 bg-green-50 text-green-700 rounded-xl border border-green-200 text-sm font-medium">
+                      Message sent successfully! We will contact you soon.
+                    </div>
+                  )}
+                  {submitStatus === "error" && (
+                    <div className="p-4 bg-red-50 text-red-700 rounded-xl border border-red-200 text-sm font-medium">
+                      Oops! Something went wrong. Please try calling us instead.
+                    </div>
+                  )}
+
+                  <button type="submit" disabled={isSubmitting} className="w-full flex items-center justify-center gap-2 bg-primary text-white rounded-xl px-6 py-4 font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 hover:-translate-y-0.5 transition-all disabled:opacity-70 disabled:cursor-not-allowed">
+                    {isSubmitting ? "Sending..." : "Send Message"} <Send className="size-4" />
                   </button>
                 </form>
               </div>
