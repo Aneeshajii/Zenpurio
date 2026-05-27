@@ -522,11 +522,11 @@ function ManpowerVIP() {
              <div className="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-slate-800 relative z-10 bg-slate-900 w-full flex items-center justify-center">
                <img src="/images/service_manpower.jpg" alt="Professional Manpower Services with 350+ people" className="w-full h-auto object-contain" loading="lazy" />
              </div>
-             <div className="absolute -bottom-4 left-0 md:-left-8 z-20 bg-gradient-to-br from-blue-500 to-blue-700 text-white p-5 md:p-6 rounded-3xl shadow-2xl rotate-[-5deg] border-4 border-slate-800 flex flex-col items-center md:items-start transform hover:rotate-0 transition-transform">
-                <p className="text-[10px] md:text-xs font-bold uppercase tracking-widest mb-1 opacity-90 text-center md:text-left">Our Strength</p>
-                <p className="text-xl md:text-3xl font-extrabold leading-tight text-center md:text-left">350+</p>
-                <p className="text-xl md:text-3xl font-extrabold mb-2 leading-tight text-center md:text-left">People</p>
-                <p className="text-sm font-bold bg-white text-blue-900 inline-block px-3 py-1 rounded-lg">Trained & Reliable</p>
+             <div className="absolute -bottom-2 md:-bottom-4 left-2 md:-left-8 z-20 bg-gradient-to-br from-blue-500 to-blue-700 text-white p-2.5 md:p-6 rounded-xl md:rounded-3xl shadow-xl md:shadow-2xl rotate-[-5deg] border-2 md:border-4 border-slate-800 flex flex-col items-center md:items-start transform hover:rotate-0 transition-transform">
+                <p className="text-[7px] md:text-xs font-bold uppercase tracking-widest mb-0.5 md:mb-1 opacity-90 text-center md:text-left">Our Strength</p>
+                <p className="text-xs md:text-3xl font-extrabold leading-tight text-center md:text-left">350+</p>
+                <p className="text-xs md:text-3xl font-extrabold mb-1 md:mb-2 leading-tight text-center md:text-left">People</p>
+                <p className="text-[8px] md:text-sm font-bold bg-white text-blue-900 inline-block px-1.5 py-0.5 md:px-3 md:py-1 rounded-md md:rounded-lg">Trained & Reliable</p>
              </div>
           </motion.div>
         </div>
