@@ -94,16 +94,15 @@ function ServiceDetailPage() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="w-full relative rounded-3xl md:rounded-[2rem] overflow-hidden shadow-xl mb-12 h-[300px] md:h-[450px] lg:h-[600px]"
+            className="w-full relative rounded-3xl md:rounded-[2rem] overflow-hidden shadow-xl mb-12 flex items-center justify-center bg-slate-100"
           >
             <img 
               src={service.image} 
               alt={service.title} 
-              className="absolute inset-0 w-full h-full object-cover" 
+              className="w-full h-auto object-contain" 
               fetchPriority="high"
               decoding="async"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
           </motion.div>
 
           <motion.div
