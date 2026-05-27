@@ -224,7 +224,7 @@ function OurPartners() {
 }
 
 const services = [
-  { icon: Users, title: "Manpower Services", to: "/services/manpower", desc: "Professional manpower solutions with a dedicated team of 350+ trained professionals.", img: "/images/service_manpower.jpg" },
+  { icon: Users, title: "Manpower Services", to: "/services/manpower", desc: "Professional manpower solutions with a dedicated team of 350+ trained professionals.", img: "/images/service_manpower.jpg", highlight: true },
   { icon: HomeIcon, title: "Residential Cleaning", to: "/services/residential", desc: "Comprehensive house cleaning, Carpet & Sofa washing, Bathroom sanitation, and dedicated Servant Maid Services.", img: "/images/home_residential_new.jpg" },
   { icon: Building2, title: "Commercial Cleaning", to: "/services/commercial", desc: "Corporate offices, Shopping Malls, Hotels, Hospitals, Banks, and educational institutions maintained flawlessly.", img: "/images/home_commercial_new.png" },
   { icon: Factory, title: "Industrial Cleaning", to: "/services/industrial", desc: "Heavy-duty factory floor cleaning, Storage tank maintenance, Turnaround services, and Non-Toxic waste removal.", img: "/images/home_industrial.png" },
