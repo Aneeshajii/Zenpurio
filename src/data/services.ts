@@ -24,7 +24,7 @@ export const serviceCategories = [
     id: "housemaid",
     title: "Housemaid Services (Wonder Maids)",
     icon: HeartHandshake,
-    image: "/images/service_housemaid_1779134456643.png",
+    image: "/images/service_housemaid_new.jpg",
     description: "Meeting the rising demand for reliable domestic help, Pureo provides premium quality housemaid services. Our dedicated staff handle kitchen cleaning, dish washing, cloth washing, and daily chores with expert care.",
     features: [
       { title: "Disinfect & Sanitize", icon: Shield, image: "/images/Disinfect & Sanitize.jpg" },
