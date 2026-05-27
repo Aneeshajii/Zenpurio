@@ -591,8 +591,8 @@ function WonderMaidsVIP() {
             viewport={{ once: true }}
             className="relative order-1 lg:order-2 px-4 md:px-0"
           >
-             <div className="aspect-[4/3] lg:aspect-square rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white relative z-10 bg-white">
-               <img src="/images/service_housemaid_new.jpg" alt="Wonder Maids Professional Housemaid Service" className="w-full h-full object-cover" loading="lazy" />
+             <div className="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white relative z-10 bg-white flex items-center justify-center w-full">
+               <img src="/images/service_housemaid_new.jpg" alt="Wonder Maids Professional Housemaid Service" className="w-full h-auto max-h-[400px] lg:max-h-[500px] object-contain" loading="lazy" />
              </div>
              {/* 2 HOURS 2 MAIDS BADGE */}
              <div className="absolute -bottom-2 md:-bottom-4 left-2 md:-left-8 z-20 bg-gradient-to-br from-blue-500 to-blue-700 text-white p-2.5 md:p-6 rounded-xl md:rounded-3xl shadow-xl md:shadow-2xl rotate-[-5deg] border-2 md:border-4 border-white flex flex-col items-center md:items-start transform hover:rotate-0 transition-transform">

@@ -130,9 +130,9 @@ function ServicesPage() {
                   transition={{ duration: 0.7 }}
                   className={`relative ${isEven ? "order-1 lg:order-2" : "order-1"}`}
                 >
-                  <div className="aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl border border-border relative z-10 group bg-white">
-                    <img src={category.image} alt={category.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" loading="lazy" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="h-[300px] md:h-[400px] rounded-[2rem] overflow-hidden shadow-2xl border border-border relative z-10 group bg-slate-50 flex items-center justify-center p-4">
+                    <img src={category.image} alt={category.title} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 ease-in-out" loading="lazy" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                   </div>
                   <div className="absolute -inset-4 bg-secondary/50 rounded-[2.5rem] -z-10 rotate-3 transition-transform group-hover:rotate-6 duration-500" />
                 </motion.div>

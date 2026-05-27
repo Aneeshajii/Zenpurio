@@ -99,7 +99,7 @@ function ServiceDetailPage() {
             <img 
               src={service.image} 
               alt={service.title} 
-              className="w-full h-auto object-contain" 
+              className="w-full h-auto max-h-[500px] lg:max-h-[600px] object-contain" 
               fetchPriority="high"
               decoding="async"
             />
