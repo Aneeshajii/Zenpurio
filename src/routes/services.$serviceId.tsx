@@ -133,7 +133,7 @@ function ServiceDetailPage() {
                   <div className="w-full aspect-[4/3] bg-secondary/30 relative overflow-hidden flex items-center justify-center">
                     {/* @ts-ignore - Temporary ignore while we migrate from icons to images */}
                     {feature.image ? (
-                      <img src={feature.image} alt={feature.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" />
+                      <img src={feature.image} alt={feature.title} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" />
                     ) : (
                       <feature.icon className="size-8 md:size-12 text-muted-foreground/30 group-hover:scale-110 transition-transform duration-500" />
                     )}
