@@ -91,6 +91,7 @@ function ContactPage() {
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-foreground">Service Required</label>
                     <select className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow appearance-none">
+                      <option>Manpower Services</option>
                       <option>Residential Cleaning</option>
                       <option>Commercial Cleaning</option>
                       <option>Industrial Cleaning</option>

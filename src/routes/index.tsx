@@ -594,11 +594,11 @@ function WonderMaidsVIP() {
                <img src="/images/service_housemaid_1779134456643.png" alt="Wonder Maids Professional Housemaid Service" className="w-full h-full object-cover" loading="lazy" />
              </div>
              {/* 2 HOURS 2 MAIDS BADGE */}
-             <div className="absolute -bottom-4 left-0 md:-left-8 z-20 bg-gradient-to-br from-blue-500 to-blue-700 text-white p-5 md:p-6 rounded-3xl shadow-2xl rotate-[-5deg] border-4 border-white flex flex-col items-center md:items-start transform hover:rotate-0 transition-transform">
-                <p className="text-[10px] md:text-xs font-bold uppercase tracking-widest mb-1 opacity-90 text-center md:text-left">Special Offer</p>
-                <p className="text-xl md:text-3xl font-extrabold leading-tight text-center md:text-left">2 Hours</p>
-                <p className="text-xl md:text-3xl font-extrabold mb-2 leading-tight text-center md:text-left">2 Maids</p>
-                <p className="text-lg md:text-xl font-bold bg-white text-blue-600 inline-block px-3 py-1 rounded-lg">₹649</p>
+             <div className="absolute -bottom-2 md:-bottom-4 left-2 md:-left-8 z-20 bg-gradient-to-br from-blue-500 to-blue-700 text-white p-2.5 md:p-6 rounded-xl md:rounded-3xl shadow-xl md:shadow-2xl rotate-[-5deg] border-2 md:border-4 border-white flex flex-col items-center md:items-start transform hover:rotate-0 transition-transform">
+                <p className="text-[7px] md:text-xs font-bold uppercase tracking-widest mb-0.5 md:mb-1 opacity-90 text-center md:text-left">Special Offer</p>
+                <p className="text-xs md:text-3xl font-extrabold leading-tight text-center md:text-left">2 Hours</p>
+                <p className="text-xs md:text-3xl font-extrabold mb-1 md:mb-2 leading-tight text-center md:text-left">2 Maids</p>
+                <p className="text-[10px] md:text-xl font-bold bg-white text-blue-600 inline-block px-1.5 py-0.5 md:px-3 md:py-1 rounded-md md:rounded-lg">₹649</p>
              </div>
           </motion.div>
         </div>
