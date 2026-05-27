@@ -224,12 +224,12 @@ function OurPartners() {
 }
 
 const services = [
-  { icon: Users, title: "Manpower Services", to: "/services/manpower", desc: "Professional manpower solutions with a dedicated team of 350+ trained professionals.", img: "/images/service_manpower.jpg", highlight: true },
+  { icon: Users, title: "Manpower Services", to: "/services/manpower", desc: "Professional manpower solutions with a dedicated team of 350+ trained professionals.", img: "/images/service_manpower.jpg" },
   { icon: HomeIcon, title: "Residential Cleaning", to: "/services/residential", desc: "Comprehensive house cleaning, Carpet & Sofa washing, Bathroom sanitation, and dedicated Servant Maid Services.", img: "/images/home_residential_new.jpg" },
   { icon: Building2, title: "Commercial Cleaning", to: "/services/commercial", desc: "Corporate offices, Shopping Malls, Hotels, Hospitals, Banks, and educational institutions maintained flawlessly.", img: "/images/home_commercial_new.png" },
   { icon: Factory, title: "Industrial Cleaning", to: "/services/industrial", desc: "Heavy-duty factory floor cleaning, Storage tank maintenance, Turnaround services, and Non-Toxic waste removal.", img: "/images/home_industrial.png" },
   { icon: HardHat, title: "Construction & Maintenance", to: "/services/construction", desc: "Specialized deep cleaning and turnaround services for massive industrial setups, factories, and construction sites.", img: "/images/home_construction.png" },
-  { icon: Settings2, title: "Multi-Model Services", to: "/services", desc: "Comprehensive facility management including carpentry, plumbing, pest control, electrical works, painting, and A/C maintenance.", img: "/images/multi_electrical.png" },
+  { icon: Settings2, title: "Multi-Model Services", to: "/services", desc: "Comprehensive facility management including carpentry, plumbing, pest control, electrical works, painting, and A/C maintenance.", img: "/images/multi_electrical.png", highlight: true },
 ];
 
 function ServicesOverview() {
