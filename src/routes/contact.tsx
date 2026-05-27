@@ -38,7 +38,7 @@ function ContactPage() {
       <div className="container mx-auto px-4 relative z-20 -mt-16">
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { icon: Phone, t: "Call Us", v: "8330066663\n8330066662\n0471-2336662", link: "tel:8330066663" },
+            { icon: Phone, t: "Call Us", v: "8330066662\n0471-2336662", link: "tel:8330066662" },
             { icon: Mail, t: "Email Us", v: "info@pureomail.com\nSupport available 24/7", link: "mailto:info@pureomail.com" },
             { icon: MapPin, t: "Corporate Office", v: "PTC Tower, SS Kovil Rd\nThampanoor, Trivandrum", link: "#map" }
           ].map((stat, i) => (

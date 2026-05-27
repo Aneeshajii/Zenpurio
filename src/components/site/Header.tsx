@@ -141,10 +141,10 @@ export function Header() {
 
           <div className="flex items-center gap-4">
             <a
-              href="tel:8330066663"
-              className="hidden sm:inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm hover:bg-primary/90 transition-all"
+              href="tel:8330066662"
+              className="hidden lg:flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-semibold text-primary hover:bg-primary hover:text-primary-foreground transition-all"
             >
-              <Phone className="size-4" /> 8330066663
+              <Phone className="size-4" /> 8330066662
             </a>
             <button
               aria-label="Menu"
@@ -231,8 +231,8 @@ export function Header() {
                   </Link>
                 ))}
                 
-                <a href="tel:8330066663" className="mt-4 flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground">
-                  <Phone className="size-4" /> 8330066663
+                <a href="tel:8330066662" className="mt-4 flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground">
+                  <Phone className="size-4" /> 8330066662
                 </a>
               </div>
             </motion.div>

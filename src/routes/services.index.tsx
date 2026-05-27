@@ -226,7 +226,7 @@ function ServicesPage() {
               <div className="text-blue-600 font-bold text-lg uppercase tracking-wide">Only At</div>
               <div className="text-5xl md:text-6xl font-extrabold text-foreground mt-1">₹649</div>
               <p className="text-sm text-muted-foreground mt-2 font-medium">No hidden charges</p>
-              <a href="tel:8330066663" className="mt-5 block w-full bg-blue-500 text-white font-bold py-4 px-8 rounded-xl shadow-md hover:bg-blue-600 transition-colors text-lg">
+              <a href="tel:8330066662" className="mt-5 block w-full bg-blue-500 text-white font-bold py-4 px-8 rounded-xl shadow-md hover:bg-blue-600 transition-colors text-lg">
                 Book Now
               </a>
             </div>

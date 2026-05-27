@@ -58,7 +58,7 @@ export function Footer() {
             <li className="flex items-center gap-3">
               <Phone className="size-5 text-primary shrink-0" />
               <span className="text-muted-foreground text-sm flex flex-col">
-                <span>8330066663 / 8330066662</span>
+                <span>8330066662</span>
                 <span>0471-2336662</span>
               </span>
             </li>

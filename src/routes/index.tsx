@@ -129,7 +129,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
             className="mt-10 flex flex-wrap gap-4"
           >
-            <a href="tel:8330066663" className="inline-flex items-center gap-2 rounded-md bg-primary px-8 py-4 text-sm font-bold text-primary-foreground shadow-lg shadow-primary/30 hover:bg-primary/90 hover:-translate-y-0.5 transition-all">
+            <a href="tel:8330066662" className="inline-flex items-center gap-2 rounded-md bg-primary px-8 py-4 text-sm font-bold text-primary-foreground shadow-lg shadow-primary/30 hover:bg-primary/90 hover:-translate-y-0.5 transition-all">
               <Phone className="size-5" /> Call a Pureologist
             </a>
             <Link to="/services" className="inline-flex items-center gap-2 rounded-md bg-white text-foreground px-8 py-4 text-sm font-bold shadow-md hover:bg-gray-50 border border-border transition-all">
@@ -342,7 +342,7 @@ function ContactSection() {
         {/* Floating Contact Cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-16">
           {[
-            { icon: Phone, t: "Call Us", v: "8330066663\n8330066662\n0471-2336662", link: "tel:8330066663" },
+            { icon: Phone, t: "Call Us", v: "8330066662\n0471-2336662", link: "tel:8330066662" },
             { icon: Mail, t: "Email Us", v: "info@pureomail.com\nSupport available 24/7", link: "mailto:info@pureomail.com" },
             { icon: MapPin, t: "Corporate Office", v: "PTC Tower, SS Kovil Rd\nThampanoor, Trivandrum", link: "#map" }
           ].map((stat, i) => (
@@ -497,7 +497,7 @@ function ManpowerVIP() {
               <Link to="/services/manpower" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-8 py-4 text-base font-bold text-white shadow-xl shadow-blue-900/50 hover:bg-blue-500 hover:-translate-y-1 transition-all">
                 Learn More
               </Link>
-              <a href="tel:8330066663" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 text-base font-bold shadow-sm hover:bg-white/20 hover:-translate-y-1 transition-all">
+              <a href="tel:8330066662" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 text-base font-bold shadow-sm hover:bg-white/20 hover:-translate-y-1 transition-all">
                 <Phone className="size-5 text-blue-300" /> Contact Us
               </a>
             </div>
@@ -568,7 +568,7 @@ function WonderMaidsVIP() {
               <Link to="/services/housemaid" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-bold text-white shadow-xl shadow-primary/30 hover:bg-primary/90 hover:-translate-y-1 transition-all">
                 Book Wonder Maids
               </Link>
-              <a href="tel:8330066663" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white border border-border text-foreground px-8 py-4 text-base font-bold shadow-sm hover:bg-gray-50 hover:-translate-y-1 transition-all">
+              <a href="tel:8330066662" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white border border-border text-foreground px-8 py-4 text-base font-bold shadow-sm hover:bg-gray-50 hover:-translate-y-1 transition-all">
                 <Phone className="size-5 text-primary" /> Call Now
               </a>
             </div>
