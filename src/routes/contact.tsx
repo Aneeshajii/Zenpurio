@@ -90,12 +90,13 @@ function ContactPage() {
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-foreground">Service Required</label>
-                    <select className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow appearance-none">
-                      <option>Manpower Services</option>
-                      <option>Residential Cleaning</option>
-                      <option>Commercial Cleaning</option>
-                      <option>Industrial Cleaning</option>
-                      <option>Facility Management</option>
+                    <select name="service_required" className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow appearance-none">
+                      <option value="Manpower Services">Manpower Services</option>
+                      <option value="Housemaid Services (Wonder Maids)">Housemaid Services (Wonder Maids)</option>
+                      <option value="Residential Cleaning">Residential Cleaning</option>
+                      <option value="Commercial Cleaning">Commercial Cleaning</option>
+                      <option value="Industrial Cleaning">Industrial Cleaning</option>
+                      <option value="Facility Management">Facility Management</option>
                     </select>
                   </div>
                   <div className="space-y-2">
