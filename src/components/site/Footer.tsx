@@ -64,8 +64,8 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-3 group">
               <MessageCircle className="size-5 text-[#25D366] shrink-0" />
-              <a href="https://wa.me/918330066662" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm group-hover:text-[#25D366] transition-colors">
-                WhatsApp: +91 8330066662
+              <a href="https://wa.me/918330066663" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm group-hover:text-[#25D366] transition-colors">
+                WhatsApp: +91 8330066663
               </a>
             </li>
             <li className="flex items-center gap-3 group">
