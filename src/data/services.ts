@@ -14,10 +14,10 @@ export const serviceCategories = [
     image: "/images/service_manpower.jpg",
     description: "At Pureo Zenpurio Services Private Limited, we believe that a strong workforce is the foundation of every successful organization. Our professional manpower solutions are designed to provide businesses, institutions, and commercial establishments with skilled, disciplined, and dependable professionals who can efficiently support daily operations and workplace productivity. With a dedicated team of 350+ trained professionals, we focus on delivering reliable manpower services with the highest standards of professionalism, responsibility, and customer satisfaction. Our commitment to quality, proper workforce management, and operational excellence enables us to build trusted partnerships while helping organizations maintain smooth, efficient, and well-managed working environments.",
     features: [
-      { title: "350+ Trained Professionals", icon: Users },
-      { title: "Reliable & Disciplined", icon: ShieldCheck },
-      { title: "Operational Excellence", icon: Settings },
-      { title: "Proper Workforce Management", icon: Briefcase }
+      { title: "350+ Trained Professionals", icon: Users, image: "/images/manpower_trained.jpg" },
+      { title: "Reliable & Disciplined", icon: ShieldCheck, image: "/images/manpower_reliable.jpg" },
+      { title: "Operational Excellence", icon: Settings, image: "/images/manpower_operational.jpg" },
+      { title: "Proper Workforce Management", icon: Briefcase, image: "/images/manpower_management.jpg" }
     ]
   },
   {
