@@ -204,7 +204,7 @@ function OurPartners() {
           </motion.p>
         </div>
         
-        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-12 justify-items-center max-w-5xl mx-auto">
           {partners.map((p, i) => (
             <motion.div
               key={p.name}
@@ -212,14 +212,14 @@ function OurPartners() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.2 }}
-              className="group relative flex flex-col items-center"
+              className="group relative flex flex-col items-center w-full"
             >
-              <div className="h-44 w-60 md:h-48 md:w-64 p-3 md:p-6 rounded-3xl border border-border bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center bg-white/50">
+              <div className="w-full max-w-[260px] aspect-[4/3] p-4 md:p-6 rounded-2xl md:rounded-3xl border border-border bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center bg-white/50">
                 <img src={p.logo} alt={p.name} className="max-h-full max-w-full object-contain mix-blend-multiply" />
               </div>
               {/* @ts-ignore */}
               {p.showName && (
-                <p className="mt-4 text-center font-bold text-foreground text-sm md:text-base max-w-[240px] leading-snug">
+                <p className="mt-3 text-center font-bold text-foreground text-xs sm:text-sm md:text-base max-w-[240px] leading-snug px-1">
                   {p.name}
                 </p>
               )}
