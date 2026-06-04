@@ -42,13 +42,13 @@ export const serviceCategories = [
     image: "/images/service_residential_cleaning_1779133604787.png",
     description: "Keep your home spotless and harmonious with our tailored residential services, engineered to provide a healthy living space for your family.",
     features: [
-      { title: "House Cleaning", icon: Home, image: "/images/house.jpg" },
-      { title: "Carpet Cleaning", icon: Layers, image: "/images/carpet.jpg" },
-      { title: "Sofa Cleaning", icon: Sofa, image: "/images/sofa.jpg" },
-      { title: "Bath room Cleaning", icon: Droplets, image: "/images/bathroom.jpg" },
-      { title: "Apartments Maintenance", icon: Building2, image: "/images/apartment.jpg" },
-      { title: "Servant Maid Services", icon: Users, image: "/images/servant.jpg" },
-      { title: "Unwanted Sticker & Labels Removing", icon: Trash2, image: "/images/sticker.jpg" }
+      { title: "House Cleaning", icon: Home, image: "/images/House Cleaning.png" },
+      { title: "Carpet Cleaning", icon: Layers, image: "/images/Carpet Cleaning.png" },
+      { title: "Sofa Cleaning", icon: Sofa, image: "/images/Sofa Cleaning.png" },
+      { title: "Bath room Cleaning", icon: Droplets, image: "/images/Bath room Cleaning.png" },
+      { title: "Apartments Maintenance", icon: Building2, image: "/images/Apartments Maintenance.png" },
+      { title: "Servant Maid Services", icon: Users, image: "/images/Servant Maid Services.png" },
+      { title: "Unwanted Sticker & Labels Removing", icon: Trash2, image: "/images/Unwanted Sticker & Labels Removing.png" }
     ]
   },
   {
