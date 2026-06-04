@@ -175,7 +175,9 @@ function TrustBanner() {
 
 const partners = [
   { name: "L'école Chempaka", logo: "/images/partner_1.jpg" },
-  { name: "Sree Vivekananda Memorial Public School", logo: "/images/partner_2.jpg" }
+  { name: "Sree Vivekananda Memorial Public School", logo: "/images/partner_2.jpg" },
+  { name: "Kasavumaalika", logo: "/images/kasavumaalika.jpg", showName: true },
+  { name: "Hotel Geethu International & Sreevisakh Hotel", logo: "/images/hotel_geethu.jpg", showName: true }
 ];
 
 function OurPartners() {
@@ -212,9 +214,15 @@ function OurPartners() {
               transition={{ delay: i * 0.2 }}
               className="group relative flex flex-col items-center"
             >
-              <div className="h-44 w-60 md:h-48 md:w-64 p-3 md:p-6 rounded-3xl border border-border bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center">
+              <div className="h-44 w-60 md:h-48 md:w-64 p-3 md:p-6 rounded-3xl border border-border bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center bg-white/50">
                 <img src={p.logo} alt={p.name} className="max-h-full max-w-full object-contain mix-blend-multiply" />
               </div>
+              {/* @ts-ignore */}
+              {p.showName && (
+                <p className="mt-4 text-center font-bold text-foreground text-sm md:text-base max-w-[240px] leading-snug">
+                  {p.name}
+                </p>
+              )}
             </motion.div>
           ))}
         </div>

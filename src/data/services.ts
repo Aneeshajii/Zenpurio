@@ -58,18 +58,18 @@ export const serviceCategories = [
     image: "/images/service_commercial_cleaning_1779133619028.png",
     description: "Maintain a pristine corporate image with our enterprise-grade cleaning protocols designed specifically for high-traffic environments.",
     features: [
-      { title: "Corporate Offices", icon: Briefcase, image: "/images/corporate.jpg" },
-      { title: "Shopping Malls", icon: Archive, image: "/images/shopping.jpg" },
-      { title: "Hotels", icon: Hotel, image: "/images/hotel.jpg" },
-      { title: "Airports", icon: Plane, image: "/images/airport.jpg" },
-      { title: "Educational Institutions", icon: GraduationCap, image: "/images/Educational Institutions.jpg" },
-      { title: "Hostels & Restaurants", icon: Coffee, image: "/images/resturant.jpg" },
-      { title: "Hospitals", icon: Stethoscope, image: "/images/hospital.jpg" },
-      { title: "Commercial Establishments", icon: Building2, image: "/images/Commercial Establishments.jpg" },
-      { title: "Guest House", icon: Home, image: "/images/Guest House.jpg" },
-      { title: "Banks & ATMs", icon: ShieldCheck, image: "/images/Banks & ATMs.jpg" },
-      { title: "Sports & Recreations Clubs", icon: Users, image: "/images/Sports & Recreations Clubs.jpg" },
-      { title: "Warehouses", icon: Package, image: "/images/Warehouses.jpg" }
+      { title: "Corporate Offices", icon: Briefcase, image: "/images/Corporate Offices.png" },
+      { title: "Shopping Malls", icon: Archive, image: "/images/Shopping Malls.png" },
+      { title: "Hotels", icon: Hotel, image: "/images/Hotels.png" },
+      { title: "Airports", icon: Plane, image: "/images/Airports.png" },
+      { title: "Educational Institutions", icon: GraduationCap, image: "/images/Educational Institutions.png" },
+      { title: "Hostels & Restaurants", icon: Coffee, image: "/images/Hostels & Restaurants.png" },
+      { title: "Hospitals", icon: Stethoscope, image: "/images/Hospitals.png" },
+      { title: "Commercial Establishments", icon: Building2, image: "/images/Commercial Establishments.png" },
+      { title: "Guest House", icon: Home, image: "/images/Guest House.png" },
+      { title: "Banks & ATMs", icon: ShieldCheck, image: "/images/Banks & ATMs.png" },
+      { title: "Sports & Recreations Clubs", icon: Users, image: "/images/sports and recreations clubs.png" },
+      { title: "Warehouses", icon: Package, image: "/images/Warehouses.png" }
     ]
   },
   {
