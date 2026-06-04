@@ -212,7 +212,7 @@ function OurPartners() {
               transition={{ delay: i * 0.2 }}
               className="group relative flex flex-col items-center"
             >
-              <div className="h-36 w-48 md:h-48 md:w-64 p-6 rounded-3xl border border-border bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center">
+              <div className="h-44 w-60 md:h-48 md:w-64 p-3 md:p-6 rounded-3xl border border-border bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center">
                 <img src={p.logo} alt={p.name} className="max-h-full max-w-full object-contain mix-blend-multiply" />
               </div>
             </motion.div>
