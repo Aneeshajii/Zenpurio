@@ -27,12 +27,12 @@ export const serviceCategories = [
     image: "/images/service_housemaid_new.jpg",
     description: "Meeting the rising demand for reliable domestic help, Pureo provides premium quality housemaid services. Our dedicated staff handle kitchen cleaning, dish washing, cloth washing, and daily chores with expert care.",
     features: [
-      { title: "Disinfect & Sanitize", icon: Shield, image: "/images/Disinfect & Sanitize.jpg" },
-      { title: "Kitchen & Bathroom Cleaning", icon: Droplets, image: "/images/Kitchen & Bathroom Cleaning.jpg" },
-      { title: "Living Areas / Rooms", icon: Home, image: "/images/Living Areas.jpg" },
-      { title: "Dusting & Floor Cleaning", icon: Sparkles, image: "/images/Dusting & Floor Cleaning.jpg" },
-      { title: "Cook & Caretaker Services", icon: Utensils, image: "/images/Cook & Caretaker Services.jpg" },
-      { title: "Flexible Scheduling", icon: Users, image: "/images/Flexible Scheduling.jpg" }
+      { title: "Disinfect & Sanitize", icon: Shield, image: "/images/Disinfect & Sanitize.png" },
+      { title: "Kitchen & Bathroom Cleaning", icon: Droplets, image: "/images/Kitchen & Bathroom Cleaning.png" },
+      { title: "Living Areas / Rooms", icon: Home, image: "/images/Living Areas Rooms.png" },
+      { title: "Dusting & Floor Cleaning", icon: Sparkles, image: "/images/Dusting & Floor Cleaning.png" },
+      { title: "Cook & Caretaker Services", icon: Utensils, image: "/images/Cook & Caretaker Services.png" },
+      { title: "Flexible Scheduling", icon: Users, image: "/images/Flexible Scheduling.png" }
     ]
   },
   {
