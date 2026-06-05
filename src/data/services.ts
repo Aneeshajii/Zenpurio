@@ -79,18 +79,18 @@ export const serviceCategories = [
     image: "/images/hero_industrial_1779124128556.png",
     description: "Heavy-duty cleaning engineered for safety, compliance, and rigorous industrial standards.",
     features: [
-      { title: "New Building Cleaning", icon: Sparkles, image: "/images/New Building Cleaning.jpg" },
-      { title: "Portion-wise Cleaning", icon: Grid, image: "/images/Portion-wise Cleaning.jpg" },
-      { title: "Construction Debris Removal", icon: Trash2, image: "/images/Construction Debris Removal.jpg" },
-      { title: "Property Cleaning", icon: Home, image: "/images/Property Cleaning.jpg" },
-      { title: "Building Premises and Parking", icon: Truck, image: "/images/Building Premises and Parking.jpg" },
-      { title: "Windows Cleaning", icon: GlassWater, image: "/images/Windows Cleaning.jpg" },
-      { title: "Marble and Tiles Cleaning", icon: Layers, image: "/images/Marble and Tiles Cleaning.jpg" },
-      { title: "Floor Cleaning", icon: Brush, image: "/images/Floor Cleaning.jpg" },
-      { title: "Washing of Walls", icon: Droplets, image: "/images/Washing of Walls.jpg" },
-      { title: "Unwanted Sticker & Label removing", icon: Trash2, image: "/images/Unwanted Sticker & Label removing.jpg" },
-      { title: "Vacuum Cleaning", icon: Fan, image: "/images/Vacuum Cleaning.jpg" },
-      { title: "Sweeping, Mopping & Polishing", icon: Sparkles, image: "/images/polishing.jpg" }
+      { title: "New Building Cleaning", icon: Sparkles, image: "/images/New Building Cleaning.png" },
+      { title: "Portion-wise Cleaning", icon: Grid, image: "/images/Portion-wise Cleaning.png" },
+      { title: "Construction Debris Removal", icon: Trash2, image: "/images/Construction Debris Removal.png" },
+      { title: "Property Cleaning", icon: Home, image: "/images/Property Cleaning.png" },
+      { title: "Building Premises and Parking", icon: Truck, image: "/images/Building Premises and Parking.png" },
+      { title: "Windows Cleaning", icon: GlassWater, image: "/images/window Cleaning.png" },
+      { title: "Marble and Tiles Cleaning", icon: Layers, image: "/images/Marble and Tiles Cleaning.png" },
+      { title: "Floor Cleaning", icon: Brush, image: "/images/Floor Cleaning.png" },
+      { title: "Washing of Walls", icon: Droplets, image: "/images/Washing of Walls.png" },
+      { title: "Unwanted Sticker & Label removing", icon: Trash2, image: "/images/Unwanted Sticker & Label removing.png" },
+      { title: "Vacuum Cleaning", icon: Fan, image: "/images/Vacuum Cleaning.png" },
+      { title: "Sweeping, Mopping & Polishing", icon: Sparkles, image: "/images/Sweeping, Mopping & Polishing.png" }
     ]
   },
   {
