@@ -144,7 +144,7 @@ export function Header() {
               href="tel:8330066662"
               className="hidden lg:flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-semibold text-primary hover:bg-primary hover:text-primary-foreground transition-all"
             >
-              <Phone className="size-4" /> 8330066662
+              <Phone className="size-4" /> 8078866663
             </a>
             <button
               aria-label="Menu"

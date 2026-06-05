@@ -58,14 +58,14 @@ export function Footer() {
             <li className="flex items-center gap-3">
               <Phone className="size-5 text-primary shrink-0" />
               <span className="text-muted-foreground text-sm flex flex-col">
-                <span>8330066662</span>
-                <span>0471-2336662</span>
+                <span>8078866663</span>
+                <span>8078866662</span>
               </span>
             </li>
             <li className="flex items-center gap-3 group">
               <MessageCircle className="size-5 text-[#25D366] shrink-0" />
               <a href="https://wa.me/918330066663" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm group-hover:text-[#25D366] transition-colors">
-                WhatsApp: +91 8330066663
+                WhatsApp: +91 8078866663
               </a>
             </li>
             <li className="flex items-center gap-3 group">
