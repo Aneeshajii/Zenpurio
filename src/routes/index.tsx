@@ -174,7 +174,7 @@ function TrustBanner() {
 }
 
 const partners = [
-  { name: "L'école Chempaka", logo: "/images/partner_1.jpg" },
+  { name: "L'école Chempaka", logo: "/images/partner_1.jpg", imageClassName: "!max-h-[80%] !max-w-[80%]" },
   { name: "Sree Vivekananda Memorial Public School", logo: "/images/partner_2.jpg" },
   { name: "Kasavumaalika", logo: "/images/kasavumaalika.jpg", showName: true },
   { name: "Hotel Geethu International & Sreevisakh Hotel", logo: "/images/hotel_geethu.jpg", showName: true }
