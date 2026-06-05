@@ -174,10 +174,10 @@ function TrustBanner() {
 }
 
 const partners = [
-  { name: "L'école Chempaka", logo: "/images/partner_1.jpg", imageClassName: "!max-h-[65%] !max-w-[65%]" },
-  { name: "Sree Vivekananda Memorial Public School", logo: "/images/partner_2.jpg" },
-  { name: "Kasavumaalika", logo: "/images/kasavumaalika.jpg", showName: true },
-  { name: "Hotel Geethu International & Sreevisakh Hotel", logo: "/images/hotel_geethu.jpg", showName: true }
+  { name: "L'école Chempaka", logo: "/images/partner_1.jpg", imageClassName: "!max-h-[50%] !max-w-[50%]" },
+  { name: "Sree Vivekananda Memorial Public School", logo: "/images/partner_2.jpg", imageClassName: "!max-h-[85%] !max-w-[85%]" },
+  { name: "Kasavumaalika", logo: "/images/kasavumaalika.jpg", showName: true, imageClassName: "!max-h-[70%] !max-w-[70%]" },
+  { name: "Hotel Geethu International & Sreevisakh Hotel", logo: "/images/hotel_geethu.jpg", showName: true, imageClassName: "!max-h-[70%] !max-w-[70%]" }
 ];
 
 function OurPartners() {
