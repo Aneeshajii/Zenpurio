@@ -100,17 +100,17 @@ export const serviceCategories = [
     image: "/images/hero_commercial_1779124110819.png",
     description: "Specialized deep cleaning and turnaround services for massive industrial setups, factories, and construction sites.",
     features: [
-      { title: "Storage Tank Cleaning", icon: Archive, image: "/images/Storage Tank Cleaning.jpg" },
-      { title: "Turnaround Services", icon: Settings, image: "/images/Turnaround Services.jpg" },
-      { title: "Oil sump & Grit Cleaning", icon: Droplets, image: "/images/Oil sump & Grit Cleaning.jpg" },
-      { title: "Non-Toxic waste Removal", icon: Trash2, image: "/images/Non-Toxic waste Removal.jpg" },
-      { title: "Sludge Removal & Cleaning", icon: Brush, image: "/images/Sludge Removal & Cleaning.jpg" },
-      { title: "Factory Floor Cleaning", icon: Factory, image: "/images/Factory Floor Cleaning.jpg" },
-      { title: "Vacuum Services", icon: Fan, image: "/images/vaccum.jpg" },
-      { title: "Industrial Equipments Cleaning", icon: Wrench, image: "/images/indyustrial wquipmen.jpg" },
-      { title: "Ventilation Cleaning", icon: Wind, image: "/images/Ventilation Cleaning.jpg" },
-      { title: "Doors, Windows & Skids", icon: GlassWater, image: "/images/Doors, Windows & Skids.jpg" },
-      { title: "De-greasing & Carbonizing", icon: Zap, image: "/images/De-greasing & Carbonizing.jpg" }
+      { title: "Storage Tank Cleaning", icon: Archive, image: "/images/Storage Tank Cleaning.png" },
+      { title: "Turnaround Services", icon: Settings, image: "/images/Turnaround Services.png" },
+      { title: "Oil sump & Grit Cleaning", icon: Droplets, image: "/images/Oil sump & Grit Cleaning.png" },
+      { title: "Non-Toxic waste Removal", icon: Trash2, image: "/images/Non-Toxic waste Removal.png" },
+      { title: "Sludge Removal & Cleaning", icon: Brush, image: "/images/Sludge Removal & Cleaning.png" },
+      { title: "Factory Floor Cleaning", icon: Factory, image: "/images/Factory Floor Cleaning.png" },
+      { title: "Vacuum Services", icon: Fan, image: "/images/Vacuum Services.png" },
+      { title: "Industrial Equipments Cleaning", icon: Wrench, image: "/images/Industrial Equipments Cleaning.png" },
+      { title: "Ventilation Cleaning", icon: Wind, image: "/images/Ventilation Cleaning.png" },
+      { title: "Doors, Windows & Skids", icon: GlassWater, image: "/images/Doors, Windows & Skids.png" },
+      { title: "De-greasing & Carbonizing", icon: Zap, image: "/images/De-greasing & Carbonizing.png" }
     ]
   }
 ];
