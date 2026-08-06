@@ -141,7 +141,7 @@ export function Header() {
 
           <div className="flex items-center gap-4">
             <a
-              href="tel:8330066662"
+              href="tel:8078866663"
               className="hidden lg:flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-semibold text-primary hover:bg-primary hover:text-primary-foreground transition-all"
             >
               <Phone className="size-4" /> 8078866663
@@ -231,8 +231,8 @@ export function Header() {
                   </Link>
                 ))}
                 
-                <a href="tel:8330066662" className="mt-4 flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground">
-                  <Phone className="size-4" /> 8330066662
+                <a href="tel:8078866663" className="mt-4 flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground">
+                  <Phone className="size-4" /> 8078866663
                 </a>
               </div>
             </motion.div>

@@ -12,7 +12,7 @@ export const serviceCategories = [
     title: "Manpower Services",
     icon: Users,
     image: "/images/service_manpower.jpg",
-    description: "At Pureo Zenpurio Services Private Limited, we believe that a strong workforce is the foundation of every successful organization. Our professional manpower solutions are designed to provide businesses, institutions, and commercial establishments with skilled, disciplined, and dependable professionals who can efficiently support daily operations and workplace productivity. With a dedicated team of 350+ trained professionals, we focus on delivering reliable manpower services with the highest standards of professionalism, responsibility, and customer satisfaction. Our commitment to quality, proper workforce management, and operational excellence enables us to build trusted partnerships while helping organizations maintain smooth, efficient, and well-managed working environments.",
+    description: "At Pureo Zenpurio Services Private Limited, we believe that a strong workforce is the foundation of every successful organization. Our professional manpower solutions are designed to provide businesses, institutions, and commercial establishments with skilled, disciplined, and dependable professionals who can efficiently support daily operations and workplace productivity. With a dedicated team of 350+ trained professionals, we focus on delivering reliable manpower services with the highest standards of professionalism, responsibility, and customer satisfaction. Our commitment to quality, proper workforce management, and operational excellence enables us to build trusted partnerships while helping organizations maintain smooth, efficient, and well-managed working environments. For inquiries, call: 9495166662.",
     features: [
       { title: "350+ Trained Professionals", icon: Users, image: "/images/manpower_trained.jpg" },
       { title: "Reliable & Disciplined", icon: ShieldCheck, image: "/images/manpower_reliable.jpg" },
@@ -25,7 +25,7 @@ export const serviceCategories = [
     title: "Housemaid Services (Wonder Maids)",
     icon: HeartHandshake,
     image: "/images/service_housemaid_new.jpg",
-    description: "Meeting the rising demand for reliable domestic help, Pureo provides premium quality housemaid services. Our dedicated staff handle kitchen cleaning, dish washing, cloth washing, and daily chores with expert care.",
+    description: "Meeting the rising demand for reliable domestic help, Pureo provides premium quality housemaid services. Our dedicated staff handle kitchen cleaning, dish washing, cloth washing, and daily chores with expert care. For inquiries, call: 8078866663.",
     features: [
       { title: "Disinfect & Sanitize", icon: Shield, image: "/images/Disinfect & Sanitize.png" },
       { title: "Kitchen & Bathroom Cleaning", icon: Droplets, image: "/images/Kitchen & Bathroom Cleaning.png" },

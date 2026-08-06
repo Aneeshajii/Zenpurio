@@ -95,7 +95,7 @@ function ContactPage() {
           {[
             { icon: Phone, t: "Call Us", v: "8078866662\n8078866663", link: "tel:8078866662" },
             { icon: Mail, t: "Email Us", v: "info@pureomail.com\nSupport available 24/7", link: "mailto:info@pureomail.com" },
-            { icon: MapPin, t: "Corporate Office", v: "PTC Tower, SS Kovil Rd\nThampanoor, Trivandrum", link: "#map" }
+            { icon: MapPin, t: "Corporate Office", v: "TC 82/30, Kalpalayam Lane\nPulimmodu M G Road, Trivandrum-695001", link: "#map" }
           ].map((stat, i) => (
             <motion.div 
               key={i}
@@ -184,7 +184,7 @@ function ContactPage() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 text-muted-foreground">
                     <MapPin className="size-5 text-primary shrink-0" />
-                    <span>1st Floor, PTC Tower Building, SS Kovil Road, Thampanoor, Thiruvananthapuram - 695001</span>
+                    <span>TC 82/30, Kalpalayam Lane, Pulimmodu M G Road, Trivandrum-695001</span>
                   </div>
                   <div className="flex items-center gap-3 text-muted-foreground">
                     <Clock className="size-5 text-primary shrink-0" />

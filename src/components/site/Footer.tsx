@@ -50,8 +50,9 @@ export function Footer() {
             <li className="flex items-start gap-3">
               <MapPin className="size-5 text-primary shrink-0 mt-0.5" />
               <span className="text-muted-foreground text-sm leading-relaxed">
-                1st Floor, PTC Tower, SS Kovil Rd,<br />
-                Thampanoor, Thiruvananthapuram<br />
+                TC 82/30, Kalpalayam Lane, <br />
+                Pulimmodu M G Road, <br />
+                Trivandrum-695001<br />
                 Kerala - 695001
               </span>
             </li>
